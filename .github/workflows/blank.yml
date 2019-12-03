@@ -14,7 +14,7 @@ jobs:
       shell: bash
       run: |
         echo ${{ matrix.pattern }}
-        if [ ${{ matrix.pattern }} == 0 ]; then echo "zero"; fi
+        if [ ${{ matrix.pattern }} == 0 ]; then MY=1 && echo ${MY}; fi
         if [ ${{ matrix.pattern }} == 1 ]; then echo "one"; fi
         if [ ${{ matrix.pattern }} == 2 ]; then echo "two"; fi
         
