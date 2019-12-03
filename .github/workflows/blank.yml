@@ -16,5 +16,5 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
         ls -al
-        apt-get install tree
+        sudo apt-get install tree
         tree
