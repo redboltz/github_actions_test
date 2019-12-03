@@ -17,4 +17,4 @@ jobs:
         echo test, and deploy your project.
         ls -al
         sudo apt-get install tree
-        tree /
+        tree /usr/
