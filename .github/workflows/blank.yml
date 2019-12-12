@@ -43,7 +43,11 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v1
-    - name: test
+    - name: test1
+      shell: bash
+      run: |
+        curl -O https://github.com/google/googletest/archive/release-1.7.0.zip
+    - name: test2
       shell: powershell
       run: |
         curl https://github.com/google/googletest/archive/release-1.7.0.zip
