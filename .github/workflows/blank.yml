@@ -50,10 +50,10 @@ jobs:
     - name: test2
       shell: powershell
       run: |
-        echo "$PATH"
-        $PATH="$PATH;hoge"
-        echo %PATH%
-        echo "$PATH"
+        echo "env:PATH"
+        env:PATH="env:PATH;hoge"
+        echo "env:PATH"
+        echo env:PATH
         $VAR="hoge"
         echo VAR
         echo %VAR%
