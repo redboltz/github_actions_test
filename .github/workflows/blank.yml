@@ -47,4 +47,6 @@ jobs:
       shell: bash
       run: |
         ls
+        ls C:\
+        ls /
                 
