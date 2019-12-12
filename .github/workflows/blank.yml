@@ -46,7 +46,7 @@ jobs:
     - name: test
       shell: powershell
       run: |
-        curl /?
+        curl https://github.com/google/googletest/archive/release-1.7.0.zip
         curl -O https://github.com/google/googletest/archive/release-1.7.0.zip
         #bitsadmin //TRANSFER htmlget "https://github.com/google/googletest/archive/release-1.7.0.zip" "${BASE}/googletest-release-1.7.0.zip"
         
