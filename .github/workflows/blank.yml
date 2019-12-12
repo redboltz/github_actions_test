@@ -46,7 +46,8 @@ jobs:
     - name: test
       shell: bash
       run: |
+        pwd
         ls
-        ls C:\
+        ls C:/
         ls /
                 
