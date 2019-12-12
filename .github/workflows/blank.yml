@@ -50,7 +50,7 @@ jobs:
     - name: test2
       shell: powershell
       run: |
-        set VAR=hoge
+        $VAR=hoge
         echo VAR
         echo %VAR%
         echo $VAR
