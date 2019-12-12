@@ -15,7 +15,7 @@ jobs:
   linux:
     strategy:
       matrix:
-        pattern: [0,1,2]
+        pattern: [0]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -32,20 +32,22 @@ jobs:
   macos:
     strategy:
       matrix:
-        pattern: [0,1,2]
+        pattern: [0]
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v1
   windows:
     strategy:
       matrix:
-        pattern: [0,1,2]
+        pattern: [0]
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v1
     - name: test
       shell: powershell
       run: |
+        curl --help
+        curl /?
         curl -O https://github.com/google/googletest/archive/release-1.7.0.zip
         #bitsadmin //TRANSFER htmlget "https://github.com/google/googletest/archive/release-1.7.0.zip" "${BASE}/googletest-release-1.7.0.zip"
         
