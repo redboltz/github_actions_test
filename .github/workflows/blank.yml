@@ -12,7 +12,7 @@ on:
 
 
 jobs:
-  build:
+  linux:
     strategy:
       matrix:
         pattern: [0,1,2]
@@ -29,4 +29,22 @@ jobs:
         if [ ${{ matrix.pattern }} == 0 ]; then MY=1 && echo ${MY}; fi
         if [ ${{ matrix.pattern }} == 1 ]; then echo "one"; fi
         if [ ${{ matrix.pattern }} == 2 ]; then echo "two"; fi
-        
+  macos:
+    strategy:
+      matrix:
+        pattern: [0,1,2]
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v1
+  windows:
+    strategy:
+      matrix:
+        pattern: [0,1,2]
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: test
+      shell: bash
+      run: |
+        ls
+                
