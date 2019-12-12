@@ -46,9 +46,10 @@ jobs:
     - name: test
       shell: bash
       run: |
+        bitsadmin.exe /TRANSFER htmlget /DOWNLOAD https://github.com/google/googletest/archive/release-1.7.0.zip googletest-release-1.7.0.zip
         pwd
         mkdir build
         cd build
-        cmake -G "Visual Studio 16 2019" ..
+        # cmake -G "Visual Studio 16 2019" ..
         
                 
