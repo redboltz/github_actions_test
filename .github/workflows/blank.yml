@@ -53,6 +53,7 @@ jobs:
     - name: test2
       shell: powershell
       run: |
+        dir
         #cmake --version
         #$env:BOOST_ROOT="$env:BOOST_ROOT"
         echo $env:BOOST_ROOT
