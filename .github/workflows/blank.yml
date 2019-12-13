@@ -54,7 +54,6 @@ jobs:
       shell: powershell
       run: |
         dir
-        #cmake --version
         #$env:BOOST_ROOT="$env:BOOST_ROOT"
         echo $env:BOOST_ROOT
         echo "step1"
@@ -62,5 +61,6 @@ jobs:
         echo "step2"
         cd build
         echo "step3"
+        cmake --version
         cmake ..
         echo "step4"
