@@ -54,6 +54,7 @@ jobs:
       shell: powershell
       run: |
         cmake --version
+        $env:BOOST_ROOT="$env:BOOST_ROOT"
         echo $env:BOOST_ROOT
         echo "step1"
         md build
