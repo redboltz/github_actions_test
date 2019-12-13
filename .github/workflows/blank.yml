@@ -22,7 +22,7 @@ jobs:
     - name: Run a multi-line script
       shell: bash
       run: |
-        
+        sudo apt-get upgrade
         clang --version
         gcc --version
         cc --version
