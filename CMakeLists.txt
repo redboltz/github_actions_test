@@ -1,3 +1,3 @@
 CMAKE_MINIMUM_REQUIRED (VERSION 2.8.12)
-
+PROJECT (mytest)
 FIND_PACKAGE (Boost REQUIRED COMPONENTS chrono context system timer)
