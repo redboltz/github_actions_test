@@ -22,6 +22,7 @@ jobs:
     - name: Run a multi-line script
       shell: bash
       run: |
+        
         clang --version
         gcc --version
         cc --version
