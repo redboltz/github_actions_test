@@ -50,7 +50,7 @@ jobs:
     - name: test2
       shell: powershell
       run: |
-        echo $BOOST_ROOT
+        echo $env:BOOST_ROOT
         ctest
         echo "$env:PATH"
         $env:PATH="$env:PATH;hoge"
