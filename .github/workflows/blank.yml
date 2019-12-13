@@ -53,6 +53,7 @@ jobs:
     - name: test2
       shell: powershell
       run: |
+        cmake --version
         echo $env:BOOST_ROOT
         md build
         cd build
