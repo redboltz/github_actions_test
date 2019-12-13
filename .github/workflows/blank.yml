@@ -23,6 +23,8 @@ jobs:
       shell: bash
       run: |
         sudo apt-get upgrade
+        sudo apt-get update
+        sudo apt-get install clang-8
         clang --version
         gcc --version
         cc --version
