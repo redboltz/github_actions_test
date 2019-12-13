@@ -24,7 +24,7 @@ jobs:
       run: |
         #sudo apt-get upgrade
         #sudo apt-get update
-        sudo apt-get install valgrind
+        sudo apt-get install gcc-multilib
         clang --version
         gcc --version
         cc --version
