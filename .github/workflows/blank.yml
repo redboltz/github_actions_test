@@ -54,4 +54,6 @@ jobs:
       shell: powershell
       run: |
         echo $env:BOOST_ROOT
+        md build
+        cd build
         cmake ..
