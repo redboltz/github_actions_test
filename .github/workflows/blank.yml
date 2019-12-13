@@ -61,6 +61,6 @@ jobs:
         echo "step2"
         cd build
         echo "step3"
-        cmake --version
+        #cmake --version
         cmake ..\
         echo "step4"
