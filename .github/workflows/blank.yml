@@ -24,6 +24,7 @@ jobs:
       run: |
         #sudo apt-get upgrade
         sudo apt-get update
+        sudo apt install g++-7.5
         clang --version
         gcc --version
         cc --version
