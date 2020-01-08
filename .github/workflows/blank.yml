@@ -29,6 +29,7 @@ jobs:
         cc --version
         mkdir build
         cd build
+        export CXX=clang++
         cmake ..
         make VERBOSE=1
         ./test
