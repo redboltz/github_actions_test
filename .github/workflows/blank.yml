@@ -24,14 +24,14 @@ jobs:
       run: |
         #sudo apt-get upgrade
         sudo apt-get update
-        #sudo apt-get install gcc-multilib
         clang --version
         gcc --version
         cc --version
-        echo ${{ matrix.pattern }}
-        if [ ${{ matrix.pattern }} == 0 ]; then MY=1 && echo ${MY}; fi
-        if [ ${{ matrix.pattern }} == 1 ]; then echo "one"; fi
-        if [ ${{ matrix.pattern }} == 2 ]; then echo "two"; fi
+        mkdir build
+        cd build
+        cmake ..
+        make VERBOSE=1
+        ./test
   macos:
     strategy:
       matrix:
