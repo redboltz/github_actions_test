@@ -23,7 +23,8 @@ jobs:
       shell: bash
       run: |
         #sudo apt-get upgrade
-        sudo find -name "*boost*"
+        sudo find -name "*boost*" -print
+        ls /usr/include
         sudo apt-get update
         sudo apt install g++-7
         clang --version
