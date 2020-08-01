@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+  push:
+    branches:
+    - '*'
+    tags:
+    - '*'
+
+jobs:
+  windows:
+    runs-on: windows-2016
+    strategy:
+      fail-fast: false
+      matrix:
+        pattern: [0, 1, 2]
+    steps:
+    - uses: actions/checkout@v1
+    - name: Cache vcpkg
+      id: cache-vcpkg
+      uses: actions/cache@v1.0.3
+      with:
+        path: C:/vcpkg/installed/x64-windows
+        key: ${{ runner.os }}-vcpkg
+    - name: Build dependencies
+      if: steps.cache-vcpkg.outputs.cache-hit != 'true'
+      shell: powershell
+      run: |
+        vcpkg install zlib:x64-windows
