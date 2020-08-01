@@ -1,4 +1,4 @@
-name: CI
+name: win_zlib
 
 on:
   pull_request:
