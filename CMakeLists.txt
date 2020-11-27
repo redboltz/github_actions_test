@@ -12,7 +12,7 @@ option(OPT1 "A" ON)
 #endif ()
 
 list (APPEND exec_programs
-    hello.cpp
+    test.cpp
 )
 
 foreach (source_file ${exec_programs})
