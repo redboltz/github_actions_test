@@ -29,5 +29,4 @@ jobs:
       shell: powershell
       run: |
         vcpkg update
-        vcpkg install boost-assert boost-numeric-conversion boost-variant boost-utility boost-fusion boost-optional boost-predef boost-preprosessor boost-test boost-timer
-
+        vcpkg install boost-assert boost-numeric-conversion boost-variant boost-utility boost-fusion boost-optional boost-predef boost-preprocessor boost-test boost-timer
