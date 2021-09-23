@@ -29,5 +29,4 @@ jobs:
       shell: powershell
       run: |
         vcpkg update
-        vcpkg install zlib:x64-windows
-        vcpkg install boost:x64-windows
+        vcpkg install python3:x64-windows
